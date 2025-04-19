@@ -1,0 +1,36 @@
+
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "src/assets"
+public_folder: "/assets"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Icon", name: "icon", widget: "string"}
+      - {label: "Publication Date", name: "pubDate", widget: "datetime"}
+      - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
+  - name: "projects"
+    label: "Projects"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Publication Date", name: "pubDate", widget: "datetime"}
+      - {label: "Technologies", name: "technologies", widget: "list"}
+      - {label: "GitHub URL", name: "github", widget: "string", required: false}
+      - {label: "Demo URL", name: "demo", widget: "string", required: false}
+      - {label: "Hero Image", name: "heroImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

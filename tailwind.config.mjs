@@ -17,14 +17,14 @@ export default {
         pyellow: "7px 7px #F2CF96",
       },
       colors: {
-        pblue: "#96C7F2",
-        pgreen: "#ADF296",
-        ppink: "#F396E5",
-        pyellow: "#F2CF96",
-        ppurlple: "#9D859A",
-        pblack: "#4E6273",
+        pblue: "#1E3A8A",
+        pgreen: "#065F46",
+        ppink: "#831843",
+        pyellow: "#854D0E",
+        ppurlple: "#581C87",
+        pblack: "#111827",
         white: {
-          DEFAULT: "#F2F2F2",
+          DEFAULT: "#F9FAFB",
         },
       },
       fontFamily: {
